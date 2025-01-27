@@ -39,15 +39,17 @@ public class PlaylistTester {
         Playlist.likeSong(3);
         Playlist.likeSong(4);
 
-        System.out.println("Printing the songs...");
-        Playlist.printSongs();
+        System.out.println("Printing the songs...\n");
+        for(int i = 0; i<Playlist.size(); i++){
+            System.out.println(Playlist.get(i).toString());
+        }
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
         Playlist.removeSong(2);
 
         System.out.println("Printing the songs...\n");
-        for(int j = 0; i<Playlist.size(); j++){
-            System.out.println(Playlist.get(j).toString());
+        for(int i = 0; i<Playlist.size(); i++){
+            System.out.println(Playlist.get(i).toString());
         }
 
         System.out.println("\nPrinting only the liked songs...\n");
