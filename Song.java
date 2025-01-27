@@ -51,16 +51,6 @@ public String getTime(){
 public boolean getLike(){
     return liked;
 }
-public void setLike(){
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Do you want to like this song? y/n");
-    String y = scanner.nextLine();
-    if(y.equals("y")){
-        liked = true;
-    }else{
-        liked=false;
-    }
-}
 public String toString(){
     return "\"" + name + "\"" + " by " + artist + "("+ length+")";
 }

@@ -36,7 +36,7 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
-      public void AddSong(Song a){
+      public void addSong(Song a){
         A.add(a);
       }
       public void LikeSong(Song b){
@@ -52,6 +52,10 @@ public class Playlist {
 
             }
         }
-        A.get(index).setLike();
+        
       }
+        public void likeSong(){
+          boolean liked = true;
+
+        }
 }
