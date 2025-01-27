@@ -41,12 +41,12 @@ public class Playlist {
       }
       public void LikeSong(Song b){
         int index = -1;
-        for(int i = 0; i <A.length; i++){
+        for(int i = 0; i <A.size(); i++){
             if (A.get(i).equals(a)){
                 index = i;
 
             }
         }
-        A.get(i).setLike();
+        A.get(index).setLike();
       }
 }
