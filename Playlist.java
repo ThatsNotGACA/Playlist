@@ -47,15 +47,10 @@ public class Playlist {
 =======
         for(int i = 0; i <A.length; i++){
             if (A.get(i).equals("a")){
->>>>>>> b421b8b (Fixing ians erros)
                 index = i;
 
             }
         }
-        
+        A.get(i).setLike();
       }
-        public void likeSong(){
-          boolean liked = true;
-
-        }
 }
