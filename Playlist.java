@@ -41,8 +41,13 @@ public class Playlist {
       }
       public void LikeSong(Song b){
         int index = -1;
+<<<<<<< HEAD
         for(int i = 0; i <A.size(); i++){
             if (A.get(i).equals(a)){
+=======
+        for(int i = 0; i <A.length; i++){
+            if (A.get(i).equals("a")){
+>>>>>>> b421b8b (Fixing ians erros)
                 index = i;
 
             }
