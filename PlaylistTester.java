@@ -12,7 +12,7 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
-        Playlist
+        Playlist Playlist = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
         /**
@@ -20,11 +20,11 @@ public class PlaylistTester {
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
-        Playlist.addSong(new Song("All of the Lights", "Kanye West", 4, 59);
-        Playlist.addSong(new Song("Money Trees", "Kendrick Lamar", 6, 27);
-        Playlist.addSong(new Song("Highway to Hell", "AC/DC", 3, 38);
-        Playlist.addSong(new Song("FE!N", "Travis Scott", 3, 12);
-        Playlist.addSong(new Song("ClapYour Hands", "A Tribe Called Quest", 3, 16);
+        Playlist.addSong(new Song("All of the Lights", "Kanye West", 4, 59));
+        Playlist.addSong(new Song("Money Trees", "Kendrick Lamar", 6, 27));
+        Playlist.addSong(new Song("Highway to Hell", "AC/DC", 3, 38));
+        Playlist.addSong(new Song("FE!N", "Travis Scott", 3, 12));
+        Playlist.addSong(new Song("ClapYour Hands", "A Tribe Called Quest", 3, 16));
 
 
         System.out.println("Printing the songs...\n");
