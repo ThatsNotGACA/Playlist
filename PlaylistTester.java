@@ -29,7 +29,9 @@ public static class PlaylistTester {
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
-        Playlist.printSongs();
+        for(int i = 0; i<Playlist.size(); i++){
+            System.out.println(Playlist.get(i).toString());
+        }
 
         System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
         //Once your songs are 'liked', this should be reflected in the next printout
@@ -37,14 +39,18 @@ public static class PlaylistTester {
         Playlist.likeSong(3);
         Playlist.likeSong(4);
 
-        System.out.println("Printing the songs...");
-        Playlist.printSongs();
+        System.out.println("Printing the songs...\n");
+        for(int i = 0; i<Playlist.size(); i++){
+            System.out.println(Playlist.get(i).toString());
+        }
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
         Playlist.removeSong(2);
 
         System.out.println("Printing the songs...\n");
-        Playlist.printSongs();
+        for(int i = 0; i<Playlist.size(); i++){
+            System.out.println(Playlist.get(i).toString());
+        }
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
@@ -65,6 +71,8 @@ public static class PlaylistTester {
 
         System.out.println("Printing all songs...\n");
         //This should now look like only the liked songs list from before
-        Playlist.printSongs();
+        for(int i = 0; i<Playlist.size(); i++){
+            System.out.println(Playlist.get(i).toString());
+        }
     }
 }
