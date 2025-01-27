@@ -42,45 +42,14 @@ public class Playlist {
       public void addSong(Song a){
         A.add(a);
       }
-      
-      public void likeSong(int index){
-          A.get(index).setLike();
+      public void LikeSong(Song b){
+        int index = -1;
+        for(int i = 0; i <A.length; i++){
+            if (A.get(i).equals("a")){
+                index = i;
 
+            }
         }
-
-      public void removeSong(int index){
-        A.remove(index);
+        A.get(index).setLike();
       }
-      public String printSongs(){
-        String name="";
-      for( int i = 0; i<A.size();i++){
-        name = (A.get(i).toString());
-        }
-        return name;
-      }
-      public ArrayList<String> printLikedSongs(){
-        for( int i = 0;i<A.size();i++){
-          if(A.get(i).getLike()==true){
-            B.add(A.get(i).toString());
-          }
-        }
-        return B;
-      }
-     public void removeAllUnlikedSongs(){
-     for( int i = A.size();i>=0;i--){
-        if(A.get(i).getLike()!=true){
-          A.remove(i);
-     }
-    
-    }
-  }
-  public int getTotalDuration(){
-    int totalduration=0;
-    for( int i = 0;i<A.size();i++){
-      totalduration = A.get(i).getTime();
-
-    }
-    return totalduration;
-  }
-
-     }
+}
