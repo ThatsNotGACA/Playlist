@@ -39,9 +39,8 @@ public class PlaylistTester {
         A.likeSong(3);
         A.likeSong(4);
 
-        System.out.println("Printing the songs...\n");
-        for(int i = 0; i<A.size(); i++){
-            System.out.println(A.get(i).toString());
+        System.out.println("Printing the songs...");
+        Playlist.printSongs();
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
         A.removeSong(2);
@@ -53,7 +52,7 @@ public class PlaylistTester {
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
-        ArrayList<Song> likedSongs = new ArrayList<Song>();
+        ArrayList<song> likedSongs = new ArrayList<song>();
        
             if(Song.getLike()==true)
             
