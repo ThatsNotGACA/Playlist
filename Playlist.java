@@ -55,6 +55,10 @@ public class Playlist {
 
             }
         }
-        A.get(index).setLike();
+        
       }
+        public void likeSong(){
+          boolean liked = true;
+
+        }
 }
