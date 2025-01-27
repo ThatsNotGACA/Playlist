@@ -40,9 +40,7 @@ public static class PlaylistTester {
         Playlist.likeSong(4);
 
         System.out.println("Printing the songs...\n");
-        for(int i = 0; i<Playlist.size(); i++){
-            System.out.println(Playlist.get(i).toString());
-        }
+        Playlist.printSongs();
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
         Playlist.removeSong(2);
