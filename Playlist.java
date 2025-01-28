@@ -43,12 +43,43 @@ public class Playlist {
         A.add(a);
       }
       
-      public void likeSong(){
-          A.getliked() = true;
+      public void likeSong(int index){
+          A.get(index).setLike();
 
         }
 
-      public void removeSong(){
-        A.remove(a)
+      public void removeSong(int index){
+        A.remove(index);
       }
-}
+      public String printSongs(){
+
+        for( int i = 0; i<A.size();i++){
+          return(A.get(i).toString());
+        }
+      }
+      public ArrayList<String> printLikedSongs(){
+        for( int i = 0;i<A.size();i++){
+          if(A.get(i).getLike()==true){
+            B.add(A.get(i).toString());
+          }
+        }
+        return B;
+      }
+     public void removeAllUnlikedSongs(){
+     for( int i = A.size();i>=0;i--){
+        if(A.get(i).getLike()!=true){
+          A.remove(i);
+     }
+    
+    }
+  }
+  public int getTotalDuration(){
+    int totalduration=0;
+    for( int i = 0;i<A.size();i++){
+      totalduration = A.get(i).getTime();
+
+    }
+    return totalduration;
+  }
+
+     }
