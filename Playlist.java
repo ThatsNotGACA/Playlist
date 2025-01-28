@@ -39,18 +39,13 @@ public class Playlist {
       public void addSong(Song a){
         A.add(a);
       }
-      public void LikeSong(Song b){
-        int index = -1;
-        for(int i = 0; i <A.size(); i++){
-            if (A.get(i).equals("a")){
-                index = i;
+      
+      public void likeSong(){
+          A.getliked() = true;
 
-            }
         }
-        
+
+      public void removeSong(){
+        A.remove(a)
       }
-        public void likeSong(){
-          boolean liked = true;
-
-        }
 }
