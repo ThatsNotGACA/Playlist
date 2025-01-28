@@ -12,7 +12,8 @@ public class Song {
 
     private String name;
     private String artist;
-    private String length;
+    private int min;
+    private int sec;
     private boolean liked;
 
 
@@ -27,7 +28,8 @@ public class Song {
 
         name=myname;
         artist=myartist;
-        length = mymin + ":" + mysec;
+       min= mymin;
+       sec= mysec;
         liked= false;
     }
 
@@ -45,14 +47,18 @@ public String getName(){
 public String getArtist(){
     return artist;
 }
-public String getTime(){
-    return length;
+public int getTime(){
+    int seclength=(min*60+sec);
+    return seclength;
 }
 public boolean getLike(){
     return liked;
 }
+public void setLike(){
+    liked=true;
+}
 public String toString(){
-    return "\"" + name + "\"" + " by " + artist + "("+ length+")" + "The song is liked: "+ liked;
+    return "\"" + name + "\"" + " by " + artist + "("+ min+":"+sec+")";
 }
 }
 
