@@ -34,13 +34,21 @@ public class PlaylistTester {
         }
 
         System.out.println("\nLiking the songs in position 1, 3, 4\n");
+        System.out.println("\nLiking the songs in position 1, 3, 4\n");
         //Once your songs are 'liked', this should be reflected in the next printout
         A.likeSong(1);
         A.likeSong(3);
         A.likeSong(4);
 
         System.out.println("Printing the songs...");
-        Playlist.printSongs();
+        A.printSongs();
+
+        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
+        A.removeSong(2);
+
+        System.out.println("Printing the songs...\n");
+        for(int i = 0; i<A.size(); i++){
+            System.out.println(A.get(i).toString());
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
         A.removeSong(2);
