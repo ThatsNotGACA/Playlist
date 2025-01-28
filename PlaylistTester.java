@@ -8,8 +8,8 @@ import java.util.ArrayList;
  * @author
  * @version
  */
-public class PlaylistTester {
-    public static void main(String[] args) {
+public static class PlaylistTester {
+    public void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
         Playlist Playlist = new Playlist();
