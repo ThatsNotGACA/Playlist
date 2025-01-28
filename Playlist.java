@@ -52,11 +52,10 @@ public class Playlist {
         A.remove(index);
       }
       public String printSongs(){
-        String name="";
-      for( int i = 0; i<A.size();i++){
-        name = (A.get(i).toString());
+
+        for( int i = 0; i<A.size();i++){
+          return(A.get(i).toString());
         }
-        return name;
       }
       public ArrayList<String> printLikedSongs(){
         for( int i = 0;i<A.size();i++){
