@@ -52,7 +52,7 @@ public boolean getLike(){
     return liked;
 }
 public String toString(){
-    return "\"" + name + "\"" + " by " + artist + "("+ length+")";
+    return "\"" + name + "\"" + " by " + artist + "("+ length+")" + "The song is liked: "+ liked;
 }
 }
 
