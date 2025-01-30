@@ -1,6 +1,5 @@
 
 
-import java.util.Scanner;
 
 /**
  * File for a Song class to be used in the Playlist Project
