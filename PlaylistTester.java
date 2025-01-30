@@ -13,6 +13,7 @@ public class PlaylistTester {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
         Playlist A = new Playlist();
+        Playlist A = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
         /**
