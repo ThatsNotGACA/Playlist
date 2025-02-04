@@ -1,6 +1,5 @@
-package Playlist;
 
-import java.util.Scanner;
+
 
 /**
  * File for a Song class to be used in the Playlist Project
@@ -12,7 +11,8 @@ public class Song {
 
     private String name;
     private String artist;
-    private String length;
+    private int min;
+    private int sec;
     private boolean liked;
 
 
@@ -27,7 +27,8 @@ public class Song {
 
         name=myname;
         artist=myartist;
-        length = mymin + ":" + mysec;
+       min= mymin;
+       sec= mysec;
         liked= false;
     }
 
@@ -45,24 +46,17 @@ public String getName(){
 public String getArtist(){
     return artist;
 }
-public String getTime(){
-    return length;
+public int getTime(){
+    int seclength=(min*60+sec);
+    return seclength;
 }
 public boolean getLike(){
     return liked;
 }
 public void setLike(){
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Do you want to like this song? y/n");
-    String y = scanner.nextLine();
-    if(y.equals("y")){
-        liked = true;
-    }else{
-        liked=false;
-    }
+    liked=true;
 }
 public String toString(){
-    return "\"" + name + "\"" + " by " + artist + "("+ length+")";
+    return "\"" + name + "\"" + " by " + artist + "("+ min+":"+sec+")";
 }
 }
-

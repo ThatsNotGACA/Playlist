@@ -1,4 +1,4 @@
-package Playlist;
+
 import java.util.ArrayList;
 
 /**
@@ -11,6 +11,8 @@ public class Playlist {
      * (CarDealership, Zoo) for structure on how this will look
      */
     private ArrayList<Song> A;
+    private ArrayList<String> B;
+
 
 
 
@@ -21,6 +23,7 @@ public class Playlist {
       */
     public Playlist(){
         A = new ArrayList<Song>();
+        B = new ArrayList<String>();
     }
 
 
@@ -36,17 +39,47 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
-      public void AddSong(Song a){
+      public void addSong(Song a){
         A.add(a);
       }
-      public void LikeSong(Song b){
-        int index = -1;
-        for(int i = 0; i <A.size(); i++){
-            if (A.get(i).equals(a)){
-                index = i;
+      
+      public void likeSong(int index){
+          A.get(index).setLike();
 
-            }
         }
-        A.get(index).setLike();
+
+      public void removeSong(int index){
+        A.remove(index);
       }
-}
+      public void printSongs(){
+      for( int i = 0; i<A.size();i++){
+        System.out.println(A.get(i).toString());
+
+      }
+    }
+      public void printLikedSongs(){
+        for( int i = 0;i<A.size();i++){
+          if(A.get(i).getLike()==true){
+            System.out.println(A.get(i).toString);
+          }
+        }
+      }
+
+     public void removeAllUnlikedSongs(){
+     for( int i = A.size();i>=0;i--){
+        if(A.get(i).getLike()!=true){
+          A.remove(i);
+     }
+    
+    }
+  }
+  public int getTotalDuration(){
+    int totalduration=0;
+    for( int i = 0;i<A.size();i++){
+      totalduration += A.get(i).getTime();
+
+    }
+    return totalduration;
+  }
+
+     }
