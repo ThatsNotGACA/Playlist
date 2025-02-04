@@ -51,12 +51,10 @@ public class Playlist {
       public void removeSong(int index){
         A.remove(index);
       }
-      public String printSongs(){
-        String name="";
+      public void printSongs(){
       for( int i = 0; i<A.size();i++){
-        name = (A.get(i).toString());
-        }
-        return name;
+        System.out.println(A.get(i).toString());
+
       }
       public ArrayList<String> printLikedSongs(){
         for( int i = 0;i<A.size();i++){
@@ -77,7 +75,7 @@ public class Playlist {
   public int getTotalDuration(){
     int totalduration=0;
     for( int i = 0;i<A.size();i++){
-      totalduration = A.get(i).getTime();
+      totalduration += A.get(i).getTime();
 
     }
     return totalduration;

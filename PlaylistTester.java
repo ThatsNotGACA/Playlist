@@ -30,8 +30,7 @@ public class PlaylistTester {
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
-        for(int i = 0; i<A.size(); i++){
-            System.out.println(A.get(i).toString());
+        A.printSongs();
         }
 
         System.out.println("\nLiking the songs in position 1, 3, 4\n");
@@ -55,8 +54,7 @@ public class PlaylistTester {
         A.removeSong(2);
 
         System.out.println("Printing the songs...\n");
-        for(int j = 0; i<A.size(); j++){
-            System.out.println(A.get(j).toString());
+        A.printsongs();
         }
 
         System.out.println("\nPrinting only the liked songs...\n");
@@ -83,8 +81,7 @@ public class PlaylistTester {
 
         System.out.println("Printing all songs...\n");
         //This should now look like only the liked songs list from before
-        for(int k = 0; i<A.size(); k++){
-            System.out.println(A.get(k).toString());
+        A.printSongs();
         }
     }
 }
