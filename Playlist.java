@@ -56,14 +56,15 @@ public class Playlist {
         System.out.println(A.get(i).toString());
 
       }
-      public ArrayList<String> printLikedSongs(){
+    }
+      public void printLikedSongs(){
         for( int i = 0;i<A.size();i++){
           if(A.get(i).getLike()==true){
-            B.add(A.get(i).toString());
+            System.out.println(A.get(i).toString);
           }
         }
-        return B;
       }
+
      public void removeAllUnlikedSongs(){
      for( int i = A.size();i>=0;i--){
         if(A.get(i).getLike()!=true){

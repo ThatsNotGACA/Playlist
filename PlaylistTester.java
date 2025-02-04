@@ -31,7 +31,7 @@ public class PlaylistTester {
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
         A.printSongs();
-        }
+        
 
         System.out.println("\nLiking the songs in position 1, 3, 4\n");
         System.out.println("\nLiking the songs in position 1, 3, 4\n");
@@ -55,13 +55,13 @@ public class PlaylistTester {
 
         System.out.println("Printing the songs...\n");
         A.printsongs();
-        }
+        
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
         ArrayList<Song> likedSongs = new ArrayList<Song>();
        
-            if(Song.getLike()==true)
+        A.printLikedSongs();
             
         
 
@@ -84,5 +84,4 @@ public class PlaylistTester {
         A.printSongs();
         }
     }
-}
 }
